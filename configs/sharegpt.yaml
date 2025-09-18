@@ -1,0 +1,12 @@
+name: "sharegpt"
+description: "ShareGPT conversation format"
+translatable_fields:
+  - field: "conversations"
+    type: "list"
+    required: true
+    description: "List of conversation turns"
+    sub_fields:
+      - field: "value"
+        type: "string"
+        condition: "from:human|gpt|assistant|user"
+        description: "The message content"

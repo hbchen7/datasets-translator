@@ -1,0 +1,19 @@
+name: "custom_reasoning"
+description: "Custom format for reasoning dataset with statement, reasoning, classification, and observation fields"
+translatable_fields:
+  - field: "statement"
+    type: "string"
+    required: true
+    description: "The main statement or claim to be analyzed"
+  - field: "reasoning"
+    type: "string"
+    required: true
+    description: "The reasoning or explanation for the analysis"
+  - field: "classification"
+    type: "string"
+    required: true
+    description: "The classification or category of the statement"
+  - field: "pure_observation_alternative"
+    type: "string"
+    required: false
+    description: "Alternative pure observation description"

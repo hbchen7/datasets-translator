@@ -1,0 +1,15 @@
+name: "alpaca"
+description: "Standard Alpaca format for instruction tuning"
+translatable_fields:
+  - field: "instruction"
+    type: "string"
+    required: true
+    description: "The instruction or task description"
+  - field: "input"
+    type: "string"
+    required: false
+    description: "Optional input data for the instruction"
+  - field: "output"
+    type: "string"
+    required: true
+    description: "Expected output or response"

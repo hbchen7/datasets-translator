@@ -1,0 +1,12 @@
+name: "openai"
+description: "OpenAI messages format"
+translatable_fields:
+  - field: "messages"
+    type: "list"
+    required: true
+    description: "List of message objects"
+    sub_fields:
+      - field: "content"
+        type: "string"
+        condition: "role:user|assistant|system"
+        description: "The message content"

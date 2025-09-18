@@ -1,0 +1,19 @@
+name: "example_format"
+description: "Example format for demonstration"
+translatable_fields:
+  - field: "title"
+    type: "string"
+    required: true
+    description: "Document title"
+  - field: "content"
+    type: "string"
+    required: true
+    description: "Main content"
+  - field: "summary"
+    type: "string"
+    required: false
+    description: "Optional summary"
+  - field: "tags"
+    type: "list"
+    required: false
+    description: "List of tag strings"

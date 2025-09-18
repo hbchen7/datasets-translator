@@ -50,7 +50,7 @@ class OpenAIHandler:
         Raises:
             Exception: 当API调用失败或验证失败时抛出异常
         """
-        url = f"{self.openai_url}/v1/chat/completions"
+        url = self.openai_url
         model = model or self.model
         
         headers = {
@@ -104,7 +104,7 @@ class OpenAIHandler:
         Raises:
             Exception: 当API调用失败或JSON验证失败时抛出异常
         """
-        url = f"{self.openai_url}/v1/chat/completions"
+        url = self.openai_url
         model = model or self.model
         
         headers = {
